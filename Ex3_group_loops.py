@@ -75,6 +75,16 @@ print("-------------------------------------------\n"
 #     print("Message for other cases")
 
 # Write your code below:
+usernumber=int(input("Enter a number between 1 to 10 :"))
+while usernumber<=0:
+   print("Invalid number,try again")
+if(usernumber<1):
+    print("The number is too low")
+elif( usernumber>10):
+    print("the number is too high")
+else:
+    print("The number is in the correct range.")
+
 
 
 # -------------------------------------------
