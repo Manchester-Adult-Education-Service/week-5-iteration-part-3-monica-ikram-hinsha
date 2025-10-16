@@ -34,7 +34,12 @@ print("-------------------------------------------\n"
 #     print("Hello " + name)  # loop through and greet
 
 # Write your code below:
-
+username1 = input("What is your name?")
+username2 = input("What is your name?")
+username3 = input("What is your name?")
+username = [username1, username2, username3]
+for i in username:
+    print("Hello " + i)
 
 # -------------------------------------------
 # SWAP COMPUTERS
