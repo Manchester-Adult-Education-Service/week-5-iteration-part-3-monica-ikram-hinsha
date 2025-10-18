@@ -168,7 +168,7 @@ while True:
       print("Valid phone number!")
       break
     else:
-      print("invalid ! Phone number should be exactly 10 digits")
+      print("invalid ! Phone number should be exactly 10 digits.")
 
 
 
