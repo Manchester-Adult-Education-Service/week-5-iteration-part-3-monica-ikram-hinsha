@@ -119,6 +119,24 @@ print("-------------------------------------------\n"
 #     #     print("Check your answer")
 
 # Write your code below:
+questions=["What is 2+7?","Type the colour of the sky:" ,"First letter of the alphabet:"]
+for i in questions:
+    answer=input(i)
+    if i =="What is 2+7?":
+      if answer=="9":
+        print("Correct answer!")
+      else:
+        print("Try again")
+    elif i=="Type the colour of the sky:":
+      if answer.lower()=="blue":
+        print("Correct answer!")
+      else:
+        print("Try again")
+    elif i=="First letter of the alphabet:":
+      if answer.lower()=="a":
+        print("Correct answer!")
+      else:
+        print("Try again")
 
 
 # -------------------------------------------
