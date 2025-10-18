@@ -161,6 +161,16 @@ print("-------------------------------------------\n"
 #     answer = input("Try again: ")
 
 # Write your code below:
+question=("What is your phone number? ")
+while True:
+    answer=input(question)
+    if answer.isdigit() and len(answer)==10:
+      print("Valid phone number!")
+      break
+    else:
+      print("invalid number!")
+
+
 
 
 # Extension 2: Multiple Feedback Options
