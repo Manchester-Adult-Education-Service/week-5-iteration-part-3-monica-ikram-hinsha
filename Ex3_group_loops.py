@@ -34,7 +34,12 @@ print("-------------------------------------------\n"
 #     print("Hello " + name)  # loop through and greet
 
 # Write your code below:
-
+username1 = input("What is your name?")
+username2 = input("What is your name?")
+username3 = input("What is your name?")
+username = [username1, username2, username3]
+for i in username:
+    print("Hello " + i)
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -70,6 +75,18 @@ print("-------------------------------------------\n"
 #     print("Message for other cases")
 
 # Write your code below:
+usernumber=int(input("Enter a number between 1 to 10 :"))
+while usernumber<1 or usernumber>10:
+   print("Invalid number,try again")
+   if(usernumber<1):
+      print("The number is too low")
+   elif( usernumber>10):
+      print("the number is too high")
+   usernumber=int(input("Enter a number between 1 to 10 :"))
+   
+
+print("The number is in the correct range.")
+
 
 
 # -------------------------------------------
@@ -104,6 +121,25 @@ print("-------------------------------------------\n"
 #     #     print("Check your answer")
 
 # Write your code below:
+questions=["What is 2+7?","Type the colour of the sky:" ,"First letter of the alphabet:"]
+for i in questions:
+    answer=input(i)
+    if i =="What is 2+7?":
+      if answer=="9":
+        print("Correct answer!")
+      else:
+        print("Incorrect !The correct answer is 9.")
+
+    elif i=="Type the colour of the sky:":
+      if answer.lower()=="blue":
+        print("Correct answer!")
+      else:
+        print("incorrect! the correct answer is blue.")
+    elif i=="First letter of the alphabet:":
+      if answer.lower()=="a":
+        print("Correct answer!")
+      else:
+        print("Incorrect! The correct answer is A.")
 
 
 # -------------------------------------------
@@ -128,6 +164,19 @@ print("-------------------------------------------\n"
 #     answer = input("Try again: ")
 
 # Write your code below:
+question=("What is your phone number? ")
+while True:
+    answer=input(question)
+    if answer.isdigit() and len(answer)==10:
+      print("Valid phone number!")
+    elif answer =="":
+      print("phone number cannot be empty!")
+    else:
+      print("invalid ! Phone number should be exactly 10 digits.")
+      break
+
+
+
 
 
 # Extension 2: Multiple Feedback Options
@@ -150,6 +199,8 @@ print("-------------------------------------------\n"
 #     print something here
 
 # Write your code below:
+
+
 
 
 # Extension 3: Repeat Quiz for Another User
