@@ -76,14 +76,16 @@ print("-------------------------------------------\n"
 
 # Write your code below:
 usernumber=int(input("Enter a number between 1 to 10 :"))
-while usernumber<=0:
+while usernumber<1 or usernumber>10:
    print("Invalid number,try again")
-if(usernumber<1):
-    print("The number is too low")
-elif( usernumber>10):
-    print("the number is too high")
-else:
-    print("The number is in the correct range.")
+   if(usernumber<1):
+      print("The number is too low")
+   elif( usernumber>10):
+      print("the number is too high")
+   usernumber=int(input("Enter a number between 1 to 10 :"))
+   
+
+print("The number is in the correct range.")
 
 
 
@@ -126,17 +128,18 @@ for i in questions:
       if answer=="9":
         print("Correct answer!")
       else:
-        print("Try again")
+        print("Incorrect !The correct answer is 9.")
+
     elif i=="Type the colour of the sky:":
       if answer.lower()=="blue":
         print("Correct answer!")
       else:
-        print("Try again")
+        print("incorrect! the correct answer is blue.")
     elif i=="First letter of the alphabet:":
       if answer.lower()=="a":
         print("Correct answer!")
       else:
-        print("Try again")
+        print("Incorrect! The correct answer is A.")
 
 
 # -------------------------------------------
@@ -166,9 +169,12 @@ while True:
     answer=input(question)
     if answer.isdigit() and len(answer)==10:
       print("Valid phone number!")
-      break
+    elif answer =="":
+      print("phone number cannot be empty!")
     else:
       print("invalid ! Phone number should be exactly 10 digits.")
+      break
+
 
 
 
